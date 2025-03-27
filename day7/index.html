@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <marquee behavior="" direction="" style="background-color: aqua;"> lets make color changes to the backgroundColor</marquee>
+  <button class="red">Red color</button>
+  <button class="green">green color</button>
+  <button class="blue"> blue color</button>
+  <marquee behavior="" direction="" style="background-color: aqua;"> lets make color changes to the backgroundColor</marquee>
+  <script>
+const red = document.getElementsByClassName("red")[0]
+const blue= document.getElementsByClassName("blue")[0]
+const green = document.getElementsByClassName("green")[0]
+
+function redcolor(){
+  document.body.style.backgroundColor="red";
+  
+
+
+}
+function bluecolor(){
+  document.body.style.backgroundColor="blue";
+}
+function Greemcolor(){
+  document.body.style.backgroundColor="green";
+}
+
+red.addEventListener('click', redcolor);
+
+blue.addEventListener('click', bluecolor);
+
+
+green.addEventListener('click', Greemcolor);
+  </script>
+</body>
+</html>
